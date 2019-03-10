@@ -1,0 +1,73 @@
+body {
+    padding: 50px;
+    font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    padding-left: 100px;
+}
+
+.alltask h2 {
+    padding-left: 0;
+    text-align: center;
+}
+
+.alltask {
+    background-color: lightgray;
+    width: 50%;
+    height: 450px;
+    float: left;
+}
+
+.alltask table {
+    margin: auto;
+    min-width: 50px;
+    border: 1px dotted lightseagreen;
+}
+
+.alltask table td {
+    min-width: 50px;
+    border: 1px dotted lightseagreen;
+}
+
+.createtask table, .deletetask table, .updatetask table {
+    padding-left: 20px;
+}
+
+.createtask {
+    background-color: lightgreen;
+    width: 50%;
+    height: 150px;
+    float: left;
+}
+
+.deletetask {
+    background-color: lightpink;
+    width: 50%;
+    height: 150px;
+    float: left;
+}
+
+.updatetask {
+    background-color: lightskyblue;
+    width: 50%;
+    height: 150px;
+    float: left;
+}
+
+.formline label {
+    min-width: 200px;
+}
+
+.formline input {
+    margin-left: 200px;
+    width: 200px;
+}

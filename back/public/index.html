@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>todolist</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body onload="onget()">
+
+<div class="alltask">
+    <h2>all</h2>
+    <div class="container"></div>
+</div>
+
+<div class="createtask">
+    <h2>create</h2>
+    <div class="container">
+        <table>
+            <tr>
+                <td><label>id</label></td>
+                <td><input autocomplete="off" id="createId" name="id"></td>
+            </tr>
+            <tr>
+                <td><label>name</label></td>
+                <td><input autocomplete="off" id="createName" name="name"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="oncreate()">send</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="updatetask">
+    <h2>update</h2>
+    <div class="container">
+        <table>
+            <tr>
+                <td><label>id</label></td>
+                <td><input autocomplete="off" id="updateId" name="id"></td>
+            </tr>
+            <tr>
+                <td><label>name</label></td>
+                <td><input autocomplete="off" id="updateName" name="name"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="onupdate()">send</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="deletetask">
+    <h2>delete</h2>
+    <div class="container">
+        <table>
+            <tr>
+                <td><label>id</label></td>
+                <td><input autocomplete="off" id="deleteId" name="id"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="ondelete()">send</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+<script src="javascripts/script.js" type="text/javascript"></script>
+</html>
