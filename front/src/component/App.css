@@ -5,6 +5,16 @@
     width: 420px;
     font-size: 18px;
 }
+.App ul li {
+    border-radius: 3px;
+    border:1px solid lightslategray;
+    margin:5px;
+    padding:5px;
+    list-style-type: none;
+    width:100px;
+    display: inline;
+
+}
 
 .container {
     margin: 10px;
