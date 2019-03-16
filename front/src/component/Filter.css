@@ -1,0 +1,11 @@
+.Filter input{
+    border-radius: 5px;
+    margin: auto;
+    border: 1px solid gray;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    background-color: whitesmoke;
+    font-size: 18px;
+}
+

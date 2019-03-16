@@ -1,0 +1,9 @@
+container {
+    margin: 10px;
+}
+
+.task {
+    border: 1px solid gray;
+    width: 400px;
+    height: 40px;
+}
