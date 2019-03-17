@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import './Filter.css';
 
 class Filter extends Component {
+    componentDidMount() {
+        this.nameInput.focus();
+    }
+
     constructor(props) {
         super(props);
     }
@@ -9,7 +13,12 @@ class Filter extends Component {
     render() {
         return (
             <div className="Filter">
-                <input onChange={(evt)=>this.props.onChange(evt.target.value)} />
+                <input className="InputField"
+
+                    ref={input => {
+                        this.nameInput = input;
+                    }}
+                    onChange={(evt) => this.props.onChange(evt.target.value)}/>
             </div>
         );
     }

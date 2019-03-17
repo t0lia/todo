@@ -5,17 +5,36 @@
     width: 420px;
     font-size: 18px;
 }
+
 .App ul li {
     border-radius: 3px;
-    border:1px solid lightslategray;
-    margin:5px;
-    padding:5px;
+    border: 1px solid lightslategray;
+    margin: 5px;
+    padding: 5px;
     list-style-type: none;
-    width:100px;
+    width: 100px;
     display: inline;
 
 }
 
+.nav {
+    background-color: lightblue;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin:4px;
+    width: 200px;
+    float: left;
+    text-align: center;
+
+
+}
+.nav a{
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    color: black;
+}
 .container {
     margin: 10px;
 }

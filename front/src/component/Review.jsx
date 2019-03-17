@@ -21,7 +21,6 @@ class Review extends Component {
         return (
             <div className="App">
                 <header className="App-header">
-                    <h2>todo</h2>
                     <Filter onChange={x => this.onFilter(x)}/>
                     <div className="container">
                         {todo.filter(x => x.value.includes(this.state.filter))

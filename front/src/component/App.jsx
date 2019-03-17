@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import Review from "./Review";
 import {BrowserRouter as Router, Link, Route} from "react-router-dom";
+import Add from "./Add";
 
 class App extends Component {
 
@@ -12,7 +13,6 @@ class App extends Component {
                     <Header/>
 
                     <Route exact path="/" component={Review}/>
-                    <Route path="/plan" component={Plan}/>
                     <Route path="/add" component={Add}/>
                 </div>
             </Router>
@@ -20,32 +20,21 @@ class App extends Component {
     }
 }
 
-function Plan() {
-    return (
-        <div><h3>Plan</h3></div>
-    )
-}
-
-function Add() {
-    return (
-        <div><h3>Add</h3></div>
-    )
-}
-
 
 function Header() {
     return (
-        <ul>
-            <li>
+
+        <div>
+            <h2>todo</h2>
+            <div className="nav">
                 <Link to="/">Review</Link>
-            </li>
-            <li>
-                <Link to="/plan">Plan</Link>
-            </li>
-            <li>
+            </div>
+
+            <div className="nav">
                 <Link to="/add">Add</Link>
-            </li>
-        </ul>
+            </div>
+        </div>
+
     );
 }
 
