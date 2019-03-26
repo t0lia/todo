@@ -1,8 +1,14 @@
 .Task {
     border-radius: 5px;
-    background-color: lightblue;
-    margin: auto;
+    margin-top:2px;
     border: 1px solid gray;
     width: 400px;
     height: 40px;
+}
+
+.review {
+    background-color: lightblue;
+}
+.created {
+    background-color: lightgreen;
 }
