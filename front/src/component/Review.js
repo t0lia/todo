@@ -31,8 +31,11 @@ class Review extends Component {
                     <div className="container">
                         {
                             this.props.tasks
-                                .filter(x => x.value.includes(this.state.filter))
-                                .map(x => <Task created={false} key={x.id} value={x.value}/>)
+                                .filter(task => task.value.includes(this.state.filter))
+                                .map(task => <Task onDelete={() => this.props.onTaskDelete(task.id)}
+                                                created={false}
+                                                key={task.id}
+                                                value={task.value}/>)
                         }
                     </div>
                 </header>
@@ -45,7 +48,8 @@ Review.propTypes = {
     tasks: PropTypes.arrayOf(PropTypes.shape({
         id: PropTypes.number.isRequired,
         value: PropTypes.string.isRequired
-    })).isRequired
+    })).isRequired,
+    onTaskDelete: PropTypes.func
 };
 
 export default Review;

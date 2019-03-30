@@ -1,5 +1,11 @@
 const TaskService = {};
-let data = [{id: 1, "name": "do something"}, {id: 2, "name": "do something more"}];
+let data = [{id: 1, "value": "do something"}, {id: 2, "value": "do something more"}];
+let index = 2;
+
+TaskService.generateId = function () {
+    index += 1;
+    return index;
+};
 
 TaskService.getAll = function () {
     return data;
@@ -11,7 +17,7 @@ TaskService.get = function (i) {
 };
 
 TaskService.create = function (task) {
-    task.id = parseInt(task.id);
+    task.id = this.generateId();
     data.push(task);
     return task;
 };
@@ -26,7 +32,7 @@ TaskService.delete = function (i) {
 TaskService.update = function (task) {
     task.id = parseInt(task.id);
     let value = data.filter(t => t.id === task.id)[0];
-    value.name = task.name;
+    value.value = task.value;
     return value;
 };
 module.exports = TaskService;

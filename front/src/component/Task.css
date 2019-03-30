@@ -1,14 +1,36 @@
-.Task {
+.delBttn{
+    height:40px;
+    width:90px;
+    margin-top:2px;
+    float :left;
+    border: 1px solid white;
+}
+.delBttn button{
+
+    border: 1px solid gray;
+    background: lightcoral;
     border-radius: 5px;
+    height:40px;
+    width:90px;
+}
+.Task {
+    text-align: left;
+    border-radius: 5px;
+    padding-top:5px;
+    padding-left:5px;
     margin-top:2px;
     border: 1px solid gray;
-    width: 400px;
     height: 40px;
 }
 
 .review {
     background-color: lightblue;
+
+    width: 300px;
+    float :left;
 }
 .created {
+    width: 400px;
     background-color: lightgreen;
+
 }
